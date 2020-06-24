@@ -147,10 +147,3 @@ print (outputs)
 # the index of the highest value corresponds to the label
 label = numpy.argmax(outputs)
 print("network says ", label)
-
-
-# In[ ]:
-
-
-
-
