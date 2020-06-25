@@ -1,3 +1,4 @@
+import os
 import numpy
 # scipy.special for the sigmoid function expit()
 from scipy import special
@@ -84,8 +85,7 @@ class neuralNetwork:
 
     # load neural network weights 
     def load(self):
+        self.wih = numpy.load(os.path.join(os.path.dirname(__file__), 'saved_wih.npy'))
+        self.who = numpy.load(os.path.join(os.path.dirname(__file__), 'saved_who.npy'))
 
-        self.wih = numpy.load('app/_core/saved_wih.npy')
-        self.who = numpy.load('app/_core/saved_who.npy')
-        
         pass
